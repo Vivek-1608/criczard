@@ -1,0 +1,260 @@
+/* Base styles */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #e0ffe0;
+  font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app,
+.commentary-page {
+  padding: 2rem;
+  font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: #e0ffe0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Home page */
+.home {
+  padding: 2rem;
+  text-align: center;
+}
+
+.match-card {
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 400px;
+  border: 2px solid #39ff14;
+  border-radius: 10px;
+  background-color: #111;
+  box-shadow: 0 0 10px #39ff14;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.match-card:hover {
+  transform: scale(1.02);
+}
+
+/* Header */
+.commentary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.commentary-header h1 {
+  flex: 1;
+  text-align: center;
+  color: #39ff14;
+  margin: 0;
+  text-shadow: 0 0 6px #39ff14;
+}
+
+.back-button {
+  background-color: #0f0f0f;
+  color: #39ff14;
+  border: 1px solid #39ff14;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #39ff14;
+  color: #000;
+}
+
+/* Buttons */
+.button-group {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.button-group button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #39ff14;
+  border-radius: 6px;
+  background-color: #111;
+  color: #39ff14;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 8px #39ff14;
+}
+
+.button-group button:hover {
+  background-color: #39ff14;
+  color: #000;
+  box-shadow: 0 0 12px #39ff14;
+}
+
+.button-group button:disabled {
+  background-color: #333;
+  color: #888;
+  border-color: #444;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Commentary output */
+.commentary-box {
+  background-color: #000;
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 1rem;
+  height: 70vh;
+  overflow-y: auto;
+  box-shadow: 0 0 12px #39ff14 inset;
+}
+
+.commentary-line {
+  background-color: #0f0f0f;
+  padding: 0.5rem 1rem;
+  border-left: 5px solid #39ff14;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #e0ffe0;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 6px #39ff14;
+}
+
+/* Highlight wicket events */
+.event-wicket {
+  background-color: #3b0000;
+  color: #ff4c4c;
+  border-left: 5px solid #ff4c4c;
+  box-shadow: 0 0 8px red;
+}
+
+/* Highlight sixes */
+.event-six {
+  background-color: #003b00;
+  color: #39ff14;
+  border-left: 5px solid #00ff66;
+  box-shadow: 0 0 8px #00ff66;
+}
+
+/* Highlight fours */
+.event-four {
+  background-color: #00263b;
+  color: #14d9ff;
+  border-left: 5px solid #14d9ff;
+  box-shadow: 0 0 8px #14d9ff;
+}
+
+/* Highlight milestones */
+.event-milestone {
+  background-color: #393b00;
+  color: #ffff66;
+  border-left: 5px solid #e2ff00;
+  animation: pulseMilestone 1s infinite alternate;
+  box-shadow: 0 0 8px #e2ff00;
+}
+
+/* Milestone animation */
+@keyframes pulseMilestone {
+  from {
+    transform: scale(1);
+    box-shadow: 0 0 10px #ffff66;
+  }
+  to {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #e2ff00;
+  }
+}
+
+/* Waiting message */
+.waiting {
+  color: #666;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Follow button inside match card */
+.match-card button {
+  background-color: #0a0a0a;
+  color: #39ff14;
+  border: 2px solid #39ff14;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 6px #39ff14;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  animation: pulseLogo 2.5s infinite;
+}
+
+/* Hover glow & invert */
+.match-card button:hover {
+  background-color: #39ff14;
+  color: #000;
+  box-shadow: 0 0 14px #39ff14, 0 0 30px #39ff14;
+  transform: scale(1.05);
+}
+
+.follow-button {
+  background-color: #0a0a0a;
+  color: #39ff14;
+  border: 2px solid #39ff14;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 6px #39ff14;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.follow-button:hover {
+  background-color: #39ff14;
+  color: #000;
+  box-shadow: 0 0 12px #39ff14;
+}
+
+/* Buttons */
+.button-group button {
+  margin: 0 0.4rem;
+  padding: 0.35rem 0.75rem; /* Reduced padding */
+  font-size: 1.2rem;        /* Slightly smaller emoji + text */
+  border: 1px solid #39ff14;
+  border-radius: 6px;
+  background-color: #111;
+  color: #39ff14;           /* Green for text + emoji */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button-group button:hover {
+  background-color: #39ff14;
+  color: #000;
+}
+
+/* Specific for emojis to keep them glowing */
+.button-group button:disabled {
+  background-color: #333;
+  color: #888;
+  border-color: #444;
+  cursor: not-allowed;
+}
+
+/* Optional glow effect on hover */
+.button-group button:hover {
+  box-shadow: 0 0 12px #39ff14;
+}

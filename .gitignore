@@ -1,0 +1,32 @@
+# Node modules (both client & server)
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build directories
+client/build/
+server/build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files (sensitive!)
+.env
+.env.*
+
+# OS & editor system files
+.DS_Store
+Thumbs.db
+
+# VSCode settings (optional, personal preference)
+.vscode/
+
+# Cache files
+.cache/
+.next/
+dist/
+
+# Dependency lock files if you're using yarn or pnpm and want to stick to npm
+yarn.lock
+pnpm-lock.yaml
