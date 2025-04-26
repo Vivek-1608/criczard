@@ -4,7 +4,7 @@
 Real-time, event-driven cricket commentary feed with Ben 10–inspired visuals!
 
 📌 Problem Statement  
-Problem Statement c – Live Sports Commentary Feed
+Problem Statement C(Fluvio) – Live Sports Commentary Feed
 
 🎯 Objective  
 Criczard solves the problem of delayed or cluttered sports commentary by offering a real-time, visually dynamic cricket commentary feed. It’s designed for fans who want quick, clean, and immersive updates without the noise.
