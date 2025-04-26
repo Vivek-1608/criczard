@@ -16,9 +16,9 @@ Team Name:
 Soloo
 
 Team Members:
-Vivek S (GitHub: Vivek-1608)
+Vivek S (GitHub: @Vivek-1608)
 
-Hruthvik R (GitHub: )
+Hruthvik R (GitHub: @Hruthvik55)
 
 Our Approach:
 Chose this problem because we’re both cricket fans & wanted to push the boundary of real-time experiences.
