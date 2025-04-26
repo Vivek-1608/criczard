@@ -74,7 +74,7 @@ Fluvio Topic: match1-topic
 Local Setup:
 
 # Clone the repo
-git clone https://github.com/Hackstreet-Boys/criczard
+git clone https://github.com/Vivek-1608/criczard
 cd criczard
 
 # Backend Setup
@@ -97,7 +97,7 @@ npx react-scripts start
 🔔 Push notifications for key match events
 
 📎 Resources / Credits
-Fluvio Node SDK
+Fluvio CLI
 
 Socket.io Docs
 
